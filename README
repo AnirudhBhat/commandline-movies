@@ -1,13 +1,29 @@
-This is quick weekend hack made to access Wikipedia from command line.
+command line movies helps you to get information about movies right from your command line!
+
+USAGE:
+  simply entering 
+  'python CLImovie.py'
+  will display current top box office movies with short description,cast,
+  rotten tomato score and link to trailer.
+
+  entering
+  python CLImovie.py -m 'movie_name' 
+  will display information about specified movie,release date,cast..etc
+
+  entering
+  python CLImovie.py -r 'your_movie_directory'
+  will display rotten tomatoe ratings for all the movies present in your specified directory.
 
 
-Its written in python.To compile it just run 'python cliwiki.py'(without quotes) from your terminal and then enter the search title to get Wikipedia page.. 
+  NOTE:each directory name in which movie resides must be exact movie name
+  
 
+  eg:
+  will work for this: movies------>the bourne identity------>thebourneidentityXVID.avi
 
-It can also be given one of following 3 command line arguments.
+  will NOT work for this(observe the second directory name): movies------>the bourne identity XVID DVDrip...------>thebourneidentityXVID.avi
 
-1)potd
-2)featured
-3)onthisday 
-
-this is just a quick hack and there's lot of crappy code in it.So please feel free to fork and send pull request if u want to improve it.
+  
+  you can use
+  python CLImovie.py -h
+  for usage
