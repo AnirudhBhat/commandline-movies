@@ -13,7 +13,7 @@ import gdata.youtube
 import gdata.youtube.service
 
 
-API_KEY = "INSERT YOUR API KEY HERE"
+API_KEY = "c5b633xj3ats73tmf9cez333"
 
 boxoffice_url = "http://api.rottentomatoes.com/api/public/v1.0"
 movie_url = "http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey="
@@ -50,26 +50,33 @@ args = parser.parse_args()
    
 if args.movie:
     k = 0
-    url = movie_url + API_KEY + '&q=' + args.movie.replace(' ','+')
-    RT = json.loads(urllib2.urlopen(url).read())
-    print ("title: ",RT['movies'][0]['title'])
-    print ("year: ",RT['movies'][0]['year'])
-    print ("mpaa-ratings: ",RT['movies'][0]['mpaa_rating'])
-    print ("runtime: ",RT['movies'][0]['runtime'])
-    print ("critics-consensus: ",RT['movies'][0]['critics_consensus'])
-    print ("release date: ",RT['movies'][0]['release_dates']['theater'])
-    print ("critics-rating: ",RT['movies'][0]['ratings']['critics_rating'])
-    print ("critics-score: ",RT['movies'][0]['ratings']['critics_score'])
-    print ("audience-rating: ",RT['movies'][0]['ratings']['audience_rating'])
-    print ("audience-score: ",RT['movies'][0]['ratings']['audience_score'])
-    print ("cast:")
-    for j in RT["movies"][k]["abridged_cast"]:
+    Title = args.movie.replace(' ','+')
+    url = movie_url + API_KEY + '&q=' + Title
+    #print (url)
+    try:
+        RT = json.loads(urllib2.urlopen(url).read())
+        print ("title: ",RT['movies'][0]['title'])
+        print ("year: ",RT['movies'][0]['year'])
+        print ("mpaa-ratings: ",RT['movies'][0]['mpaa_rating'])
+        print ("runtime: ",RT['movies'][0]['runtime'])
+        print ("critics-consensus: ",RT['movies'][0]['critics_consensus'])
+        print ("release date: ",RT['movies'][0]['release_dates']['theater'])
+        print ("critics-rating: ",RT['movies'][0]['ratings']['critics_rating'])
+        print ("critics-score: ",RT['movies'][0]['ratings']['critics_score'])
+        print ("audience-rating: ",RT['movies'][0]['ratings']['audience_rating'])
+        print ("audience-score: ",RT['movies'][0]['ratings']['audience_score'])
+        print ("cast:")
+        for j in RT["movies"][k]["abridged_cast"]:
             print(j["name"])
    	    print(j["characters"],end="\n\n\n")
+        print (youtube_trailer(Title))
+    except:
+        pass
 
 
 elif args.ratings:
     try:
+        os.system('cd')
         mvname = os.listdir(sys.argv[2])
         #x = 0
         #y = (100/len(mvname))
