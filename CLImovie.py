@@ -13,7 +13,7 @@ import gdata.youtube
 import gdata.youtube.service
 
 
-API_KEY = "c5b633xj3ats73tmf9cez333"
+API_KEY = "INSERT YOUR API KEY HERE"
 
 boxoffice_url = "http://api.rottentomatoes.com/api/public/v1.0"
 movie_url = "http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey="
