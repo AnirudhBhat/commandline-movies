@@ -6,11 +6,11 @@ USAGE:
   will display current top box office movies with short description,cast,
   rotten tomato score and link to trailer.
 
-  ![Boxoffice]("https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/boxoffice1.png")
+  ![Boxoffice](https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/boxoffice1.png)
 
-  ![Boxoffice]("https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/boxoffice2.png")
+  ![Boxoffice](https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/boxoffice2.png)
 
-  ![Boxoffice]("https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/boxoffice3.png")
+  ![Boxoffice](https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/boxoffice3.png)
 
 
 
@@ -20,15 +20,15 @@ USAGE:
   python CLImovie.py -m 'movie_name' 
   will display information about specified movie,release date,cast..etc
 
-  ![Movie]("https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/movie.png")
-  ![Movie]("https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/movie2.png")
+  ![Movie](https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/movie.png)
+  ![Movie](https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/movie2.png)
 
 
   entering
   python CLImovie.py -r 'your_movie_directory'
   will display rotten tomatoe ratings for all the movies present in your specified directory.
 
-  ![Ratings]("https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/ratings.png")
+  ![Ratings](https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/ratings.png)
 
   NOTE:each directory name in which movie resides must be exact movie name
   
@@ -43,4 +43,4 @@ USAGE:
   python CLImovie.py -h
   for usage
 
-  ![Help]("https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/help.png")
+  ![Help](https://www.github.com/AnirudhBhat/commandline-movies/raw/master/screenshots/help.png)
