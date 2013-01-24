@@ -14,7 +14,7 @@ USAGE:
   python CLImovie.py -r 'your_movie_directory'
   will display rotten tomatoe ratings for all the movies present in your specified directory.
 
-  ![ratings](AnirudhBhat.github.com/commandline-movies/screenshots/ratings.png)
+  ![Alt text](https://www.github.com/AnirudhBhat/commandline-movies/screenshots/ratings.png)
 
   NOTE:each directory name in which movie resides must be exact movie name
   
